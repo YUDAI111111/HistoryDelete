@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>プライバシーポリシー | History Cleaner</title>
+  <meta name="description" content="History Cleaner のプライバシーポリシー" />
+  <style>
+    :root {
+      --fg: #111827; --muted:#6b7280; --link:#2563eb; --border:#e5e7eb; --bg:#ffffff;
+      --card:#f9fafb;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif}
+    header{padding:24px 16px;border-bottom:1px solid var(--border);background:#fff}
+    main{max-width:860px;margin:0 auto;padding:24px 16px}
+    h1{font-size:28px;margin:0}
+    h2{font-size:20px;margin:28px 0 8px}
+    p{margin:0 0 12px}
+    ul{margin:8px 0 16px 22px}
+    code{background:#f3f4f6;padding:.1em .3em;border-radius:4px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin:12px 0}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    footer{margin-top:24px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>プライバシーポリシー</h1>
+    <div>History Cleaner（以下「本拡張」）</div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>1. 目的と範囲（単一用途）</h2>
+      <p>本拡張は <strong>ユーザーのブラウジング履歴を削除する</strong> という単一で明確な用途のみを提供します。履歴削除はユーザー操作またはユーザーが選択したトリガー（例：一定間隔、毎日、起動時、ウィンドウをすべて閉じたとき、画面ロック時）により実行されます。</p>
+    </section>
+
+    <section class="card">
+      <h2>2. 収集・保存・送信するデータ</h2>
+      <ul>
+        <li>本拡張は <strong>個人データを収集・保存・送信しません</strong>。</li>
+        <li>履歴削除やバッジ表示などの処理は <strong>すべてローカル</strong>（ユーザーのChrome上）で行われます。</li>
+        <li>（任意機能）バッジ表示のために履歴の<strong>件数のみ</strong>を一時的に取得します。URLやページタイトルといった内容は保存・送信しません。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3. 使用する権限と利用目的</h2>
+      <ul>
+        <li><code>browsingData</code>：履歴を削除するため（必須）。</li>
+        <li><code>storage</code>：ユーザー設定（削除期間、テーマ、スケジュール/トリガー）を保存するため（必須）。</li>
+        <li><code>history</code>（任意）：バッジに表示するための期間内<span style="white-space:nowrap">履歴件数</span>をローカル取得。</li>
+        <li><code>alarms</code>（任意）：一定間隔や毎日の自動削除を実行するため。</li>
+        <li><code>windows</code>（任意）：すべてのウィンドウが閉じられたタイミングで削除を実行するため。</li>
+        <li><code>idle</code>（任意）：画面ロック（Win+L等）検知時に削除を実行するため。</li>
+      </ul>
+      <p>これらの権限は <strong>履歴削除という単一の目的</strong> のためにのみ使用します。</p>
+    </section>
+
+    <section class="card">
+      <h2>4. 第三者提供・外部送信</h2>
+      <p>本拡張はデータを第三者へ提供せず、外部サーバーへ送信もしません。解析・広告・追跡ライブラリは使用していません。</p>
+    </section>
+
+    <section class="card">
+      <h2>5. ポリシーの変更</h2>
+      <p>本ポリシーは、本拡張の挙動変更等に伴い更新される場合があります。最新版は本ページで公表します。</p>
+    </section>
+
+    <section class="card">
+      <h2>6. お問い合わせ</h2>
+      <p>ご不明点は GitHub リポジトリの Issue よりご連絡ください。</p>
+      <p>👉 <a href="https://github.com/your-username/your-repo/issues" rel="nofollow">GitHub リポジトリ（Issues）</a></p>
+    </section>
+
+    <footer>
+      最終更新日：<time datetime="2025-09-22">2025年9月22日</time>
+    </footer>
+  </main>
+</body>
+</html>
